@@ -1,0 +1,12 @@
+version: '3'
+services:
+  google-api-mock:
+    container_name: google-api-mock
+    image: wiremock/wiremock
+    ports:
+      - "19080:8080"
+  google-login-verification-api:
+    container_name: google-login-verification-api
+    image: wiremock/wiremock
+    ports:
+      - "18081:8080"
